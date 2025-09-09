@@ -1,0 +1,28 @@
+Project Title 2 : Titanic Dataset Preprocessing and Feature Engineering
+Project Goal: To prepare the Titanic dataset for subsequent machine learning model development by executing a comprehensive data preprocessing and feature engineering pipeline. This project aims to transform raw data into a clean, normalized, and enriched format suitable for various predictive modeling tasks.
+Objectives:
+1.	Missing Value Imputation:
+o	Strategically fill missing values within the dataset. For numerical features like 'Age', imputation should utilize a central tendency measure (e.g., median). For categorical features, imputation should leverage a statistical measure (e.g., mode).
+2.	Categorical Feature Encoding:
+o	Apply appropriate encoding techniques to convert categorical variables into numerical representations. This will include:
+	One-Hot Encoding: For nominal categorical features where no intrinsic order exists.
+	Label Encoding: For ordinal categorical features where a natural order is present (if applicable to the dataset, otherwise focus on one-hot for nominals).
+3.	Numerical Feature Scaling/Normalization:
+o	Standardize or normalize numerical features to a consistent scale to prevent features with larger magnitudes from disproportionately influencing model training. Implement either MinMaxScaler or StandardScaler based on the distribution characteristics of the features.
+4.	Feature Engineering:
+o	Title Extraction: Develop a robust method to extract passenger titles (e.g., Mr., Mrs., Miss, Master, Dr., Rev.) from the 'Name' column. This new 'Title' feature should be handled appropriately (e.g., mapping similar titles, handling rare titles).
+o	Family Size Creation: Construct a new feature named 'FamilySize' by combining existing 'SibSp' (siblings/spouses aboard) and 'Parch' (parents/children aboard) features, reflecting the total number of family members with each passenger.
+Tools/Libraries:
+•	Python
+•	Pandas (for data manipulation)
+•	Scikit-learn (for imputation, encoding, and scaling transformers)
+Deliverables:
+•	A well-structured and commented Python script (.py or Jupyter Notebook .ipynb) detailing all preprocessing and feature engineering steps.
+•	The preprocessed DataFrame as an output (either saved to a file or made available for subsequent analysis).
+•	Documentation (within comments or markdown cells) explaining the rationale behind chosen imputation strategies, encoding methods, scaling techniques, and the logic for new feature creation.
+Success Criteria:
+•	All specified preprocessing steps are successfully implemented without errors.
+•	The resulting dataset is free of missing values in the targeted columns.
+•	Categorical variables are appropriately encoded.
+•	Numerical features are scaled as required.
+•	The new 'Title' and 'FamilySize' features are accurately created and integrated into the dataset.
